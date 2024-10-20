@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://www.shyftservices.com/hubfs/Blog/Apr23-E-Waste-Earth-Day-Article/what-to-know-e-waste-crisis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+}
+.subtitle{
+    color: rgb(3, 3, 42);
+    font-weight: bold;
+    font-size: 25px;
+}
+.item{
+    background-color: #F5F5F5;
+}
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 55px;
+    color: white;
+    box-shadow: black;
+}
+.layout{
+    display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #0a090900;
+  border-radius: 16px;
+   background: linear-gradient(to right, #3f4c6b, #606c88);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  border: 1px solid #369eff66;
+  width: 60%;
+  transition: all 0.6s ease;
+  margin: 20px auto;
+    padding: 20px;
+    background: #F5F5F5;
+    font-family: "Roboto", sans-serif;
+    width: 300px;
+    
+}
+.qty{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2c4b;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #20B2AA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1c8593;
+}
+.output{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    
+    background-color: rgba(10, 4, 50, 0.4);
+    width: 45%;
+    margin: auto;
+    padding: 4px;
+}
+.sub{
+    font-size: 40px;
+}
+
+/* Hide the result div initially */
+#result {
+    opacity: 0;
+    transform: scale(0.8); /* Scale down slightly for pop-up effect */
+    transition: all 0.4s ease-in-out; /* Smooth transition for visibility and scaling */
+}
+
+/* Additional styling to keep the result looking good */
+#result.popup {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* You can also add other styles to fit the theme */
+@media screen and (max-width: 768px) {
+    #container {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        width: 100%;
+        height: 100vh;
+        padding: 15px;
+    }
+
+    label, input, button {
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 14px;
+        width: 100%;
+        height: 100vh;
+    }
+}

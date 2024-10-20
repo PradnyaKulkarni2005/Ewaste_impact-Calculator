@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Waste Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">E-Waste Environmental Impact Calculator</h1>
+    <form id="ewaste-form" class="layout">
+        <label for="item" class="subtitle">Select E-Waste Type:</label>
+        <select id="item">
+            <option value="smartphone">Smartphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="desktopComputer">Desktop Computer</option>
+            <option value="tablet">Tablet</option>
+            <option value="smartwatch">Smartwatch</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="mouse">Mouse</option>
+            <option value="printer">Printer</option>
+            <option value="scanner">Scanner</option>
+            <option value="lcdMonitor">LCD Monitor</option>
+            <option value="externalHardDrive">External Hard Drive</option>
+            <option value="usbFlashDrive">USB Flash Drive</option>
+            <option value="ledTelevision">LED Television</option>
+            <option value="videoGameConsole">Video Game Console</option>
+            <option value="router">Router</option>
+            <option value="setTopBox">Set Top Box</option>
+            <option value="digitalCamera">Digital Camera</option>
+            <option value="smallSpeakers">Small Speakers</option>
+            <option value="largeSpeakers">Large Speakers</option>
+            <option value="projector">Projector</option>
+            <option value="wiredHeadphones">Wired Headphones</option>
+            <option value="wirelessHeadphones">Wireless Headphones</option>
+            <option value="microwaveOven">Microwave Oven</option>
+            <option value="washingMachine">Washing Machine</option>
+            <option value="dishwasher">Dishwasher</option>
+            <option value="refrigerator">Refrigerator</option>
+            <option value="airConditioner">Air Conditioner</option>
+            <option value="vacuumCleaner">Vacuum Cleaner</option>
+            <option value="electricKettle">Electric Kettle</option>
+            <option value="toaster">Toaster</option>
+            <option value="blender">Blender</option>
+            <option value="hairDryer">Hair Dryer</option>
+            <option value="electricScooter">Electric Scooter</option>
+            <option value="hoverboard">Hoverboard</option>
+            <option value="drones">Drones</option>
+            <option value="serverRackUnit">Server Rack Unit</option>
+            <option value="upsBatteryBackup">UPS Battery Backup</option>
+            <option value="wifiExtender">WiFi Extender</option>
+            <option value="smartDoorbell">Smart Doorbell</option>
+            <option value="smartThermostat">Smart Thermostat</option>
+        </select>
+        
+        <br>
+        <label for="quantity" class="qty">Quantity:</label>
+        <input type="number" id="quantity" value="1">
+        <br>
+        <button type="button" onclick="calculateImpact()">Calculate</button>
+    </form>
+    <div id="result" class="output">
+        <h2 class="sub"></h2>
+        <p class="type" id="type"></p>
+        <p class="weight" id="weight"></p>
+        <p class="co2" id="c"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
