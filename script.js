@@ -1,4 +1,3 @@
-// Predefined data for e-waste items
 const ewasteData = {
     smartphone: { weight: 180, recyclablePercent: 80, co2Saved: 11 },
     laptop: { weight: 2200, recyclablePercent: 85, co2Saved: 145 },
@@ -48,9 +47,9 @@ function calculateImpact() {
     const quantity = parseInt(document.getElementById("quantity").value);
     const data = ewasteData[item];
     
-    const totalWeight = data.weight * quantity;
+    const totalWeight = (data.weight * quantity)/1000;
     const recyclableWeight = (data.recyclablePercent / 100) * totalWeight;
-    const co2Saved = data.co2Saved * quantity;
+    const co2Saved = (data.co2Saved * quantity)/1000;
 
     // Set the content
     document.getElementById("type").innerText = `E-Waste Type: ${item}`;
